@@ -94,7 +94,7 @@
     TTExpandWaveView * wave = [[TTExpandWaveView alloc] init];
     wave.startRadiu = 0;
     wave.endRadiu  = 240;
-    wave.speed = 4;
+    wave.speed = 8;
     [self.animateview addSubview:wave];
     [wave mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
@@ -106,7 +106,7 @@
     TTExpandWaveView * wave1 = [[TTExpandWaveView alloc] init];
     wave1.startRadiu = 0;
     wave1.endRadiu  = 360;
-    wave1.speed = 6;
+    wave1.speed = 12;
     wave1.delay = 60;
     wave1.scale = 0.5;
     [self.animateview addSubview:wave1];

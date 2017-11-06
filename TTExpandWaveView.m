@@ -55,8 +55,13 @@
     self.link = nil;
 }
 
-- (void)animating {          
-    _animateFlag += _speed;
+- (void)animating {
+    
+    CGFloat rat = _startRadiu/_endRadiu;
+    CGFloat degreen = M_PI_2*rat;
+    CGFloat muti = sin(degreen) * 0.5 + 0.5;
+    
+    _animateFlag += _speed * muti;
     if (_animateFlag > _delay && !_canStart) {
         _canStart = YES;
         _animateFlag = 0;
