@@ -57,7 +57,7 @@
 
 - (void)animating {
     
-    CGFloat rat = _startRadiu/_endRadiu;
+    CGFloat rat = _startRadiu/_endRadiu;//计算动态速度
     CGFloat degreen = M_PI_2*rat;
     CGFloat muti = sin(degreen) * 0.5 + 0.5;
     
